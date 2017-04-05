@@ -327,7 +327,7 @@ max-width: 100%;
 }
 
 .about-me-content{
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.5;
 	color:#757575;
 }
@@ -509,8 +509,9 @@ color:#DF5A49;
 }
 
 .slide .photo-overlay{
+	padding:10px;
 	opacity:1;
-	background-color: #2C3E50;
+	background-color: #1695A3; /*2C3E50*/
 	transform: translateX(-109%);
 }
 
@@ -526,9 +527,10 @@ color:#DF5A49;
 }
 
 .photo-overlay p{
-	line-height: 1;
-	font-size:1rem;
+	line-height: 1.5;
+	font-size:1em;
 	display:inline-block;
+	padding:5px;
   width:100%;
 }
 /*======PROJECT SECTION END======*/
@@ -622,7 +624,7 @@ color:#DF5A49;
    		    font-size: 68px;
    	}
    	.full-column{
-   		padding-top: 6rem;
+   		/*padding-top: 6rem;*/
    	}
 
    }

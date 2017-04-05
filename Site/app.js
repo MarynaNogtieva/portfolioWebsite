@@ -51,3 +51,23 @@ $('.smoothScroll').click(function() {
   });
 
 
+$('.navigation-link').click(function() {
+	//alert('click');
+	console.log(this);
+		$(".open-menu2").removeClass("open");
+	 	$(".nav").css("opacity","0");
+	     $(".nav").css("z-index","-1");
+	     $(".nav").css("top","-100vh");
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+
+
